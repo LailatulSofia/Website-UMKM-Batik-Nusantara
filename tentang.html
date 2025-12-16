@@ -1,148 +1,159 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tentang Kami - Batik Nusantara</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- JS Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tentang Kami - Batik Nusantara</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- JS Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Batik Nusantara</h1>
+            <nav class="navbar navbar-expand-lg" style="background-color: #532a10;">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center text-white" href="index.html"></a>
+                    <img src="images/logo.jpg" alt="Logo Batik Nusantara" class="logo-navbar me-2">
+                    <span>   UMKM Batik Nusantara</span>
 
-<body>
-  <header>
-    <h1>Batik Nusantara</h1>
-    <nav class="navbar navbar-expand-lg" style="background-color: #532a10;">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center text-white" href="index.html"></a>
-        <img src="images/logo.jpg" alt="Logo Batik Nusantara" class="logo-navbar me-2">
-        <span>   UMKM Batik Nusantara</span>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                    </button>
 
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-flex gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold custom-nav" href="index.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold custom-nav" href="tentang.html">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold custom-nav" href="produk.html">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold custom-nav" href="galeri.html">Galeri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold custom-nav" href="kontak.html">Kontak</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto d-flex gap-3">
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="tentang.html">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="produk.html">Produk</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="galeri.html">Galeri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="kontak.html">Kontak</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+        <main class="container my-5">
+            <h2 class="text-center mb-2">Profil Usaha Kami</h2>
+            <section class="box">
+                <p> Berdiri sejak tahun <strong>2010</strong>, Batik Nusantara menghadirkan batik berkualitas dari berbagai daerah di Indonesia.
+                    Kami bekerja sama dengan pengrajin lokal agar setiap kain sampai ke tangan Anda dalam kualitas terbaik; motif indah, bahan nyaman, dan eksklusif. </p>
+            </section>
+            <br>
+            <h3>Dengarkan Cerita Kami</h3>
 
-  <main class="container my-5">
-    <h2 class="text-center mb-2">Profil Usaha Kami</h2>
-    <section class="box">
-      <p>
-        Berdiri sejak tahun <strong>2010</strong>, Batik Nusantara menghadirkan batik berkualitas dari berbagai daerah di Indonesia.
-        Kami bekerja sama dengan pengrajin lokal agar setiap kain sampai ke tangan Anda dalam kualitas terbaik; motif indah, bahan nyaman, dan eksklusif.
-      </p>
-    </section>
+            <div style="max-width: 800px; margin: 0 auto 30px;">
+                <video width="100%" height="450" controls>
+                    <source src="video/promosi.mp4" type="video/mp4" />
+                    Video tidak tersedia di browser Anda.
+                </video>
+            </div>
 
-    <br>
-    <h3>Dengarkan Cerita Kami</h3>
+            <audio controls style="display: block; width: 50%; margin: 20px auto;">
+                <source src="audio/cerita.mp3" type="audio/mpeg" />
+                Audio tidak tersedia di browser Anda.
+            </audio>
 
-    <!-- VIDEO LOKAL (PC) -->
-    <div style="max-width: 800px; margin: 0 auto 30px;">
-      <video width="100%" height="450" controls>
-        <source src="video/promosi.mp4" type="video/mp4" />
-        Video tidak tersedia di browser Anda.
-      </video>
-    </div>
+            <h3>Testimoni Pelanggan</h3>
+            <section class="box" id="testimoni">
+                <ul id="list-testimoni"></ul>
+            </section>
 
-    <!-- AUDIO LOKAL (PC) -->
-    <audio controls style="display: block; width: 50%; margin: 20px auto;">
-      <source src="audio/cerita.mp3" type="audio/mpeg" />
-      Audio tidak tersedia di browser Anda.
-    </audio>
+            <script>
+                const testimoni = [
+                    "Batik Solo motif klasiknya sangat elegan!",
+                    "Batik Pekalongan warnanya cerah dan cantik.",
+                    "Batik Tulis Yogyakarta kualitasnya premium!",
+                    "Pengiriman cepat, kain rapi dan wangi!",
+                    "Harga terjangkau, kualitas tetap istimewa!"
+                ];
 
-    <h3>Testimoni Pelanggan</h3>
-    <section class="box" id="testimoni">
-      <ul id="list-testimoni"></ul>
-    </section>
+                const listTestimoni = document.getElementById("list-testimoni");
 
-    <script>
-      const testimoni = [
-        "Batik Solo motif klasiknya sangat elegan!",
-        "Batik Pekalongan warnanya cerah dan cantik.",
-        "Batik Tulis Yogyakarta kualitasnya premium!",
-        "Pengiriman cepat, kain rapi dan wangi!",
-        "Harga terjangkau, kualitas tetap istimewa!"
-      ];
+                testimoni.forEach(function(item){
+                    let li = document.createElement("li");
+                    li.textContent = item;
+                    listTestimoni.appendChild(li);
+                });
+            </script>
 
-      const listTestimoni = document.getElementById("list-testimoni");
+            <section class="box">
+                <h3>Cek Kategori Usia</h3>
+                <label for="usia">Masukkan usia Anda: </label>
+                <input type="number" id="usia" placeholder="Usia"><br><br>
 
-      testimoni.forEach(function(item){
-        let li = document.createElement("li");
-        li.textContent = item;
-        listTestimoni.appendChild(li);
-      });
-    </script>
+                <button onclick="cekUsia()">Cek Kategori</button>
 
-    <br>
+                <p id="kategori"></p>
 
-    <section class="box">
-      <h3>Cek Kategori Usia</h3>
-      <label for="usia">Masukkan usia Anda: </label>
-      <input type="number" id="usia" placeholder="Usia"><br><br>
+                <script>
+                    function cekUsia() {
+                    let usia = document.getElementById("usia").value;
+                    let kategori = "";
 
-      <button onclick="cekUsia()">Cek Kategori</button>
+                    if (usia < 13) {
+                        kategori = "Anak-anak";
+                    } else if (usia >= 13 && usia <= 17) {
+                        kategori = "Remaja";
+                    } else if (usia >= 18 && usia <= 60) {
+                        kategori = "Dewasa";
+                    } else if (usia > 60) {
+                        kategori = "Lansia";
+                    } else {
+                        kategori = "Input tidak valid";
+                    }
 
-      <p id="kategori"></p>
+                    document.getElementById("kategori").textContent = "Kategori usia anda adalah " + kategori;
+                    }
+                </script>
+            </section>
 
-      <script>
-        function cekUsia() {
-          let usia = document.getElementById("usia").value;
-          let kategori = "";
+            <section class="box">
+                <h3>Kunjungi Kami</h3>
+                <p>
+                    Ikuti kisah dan aktivitas kami di media sosial:<br>
+                    <a href="https://instagram.com/batiknusantara" target="_blank">
+                    📷 Instagram Batik Nusantara
+                    </a>
+                </p>
+            </section>
+        </main>
 
-          if (usia < 13) {
-            kategori = "Anak-anak";
-          } else if (usia >= 13 && usia <= 17) {
-            kategori = "Remaja";
-          } else if (usia >= 18 && usia <= 60) {
-            kategori = "Dewasa";
-          } else if (usia > 60) {
-            kategori = "Lansia";
-          } else {
-            kategori = "Input tidak valid";
-          }
+    <footer>
+        <p>&copy; 2025 Batik Nusantara. Semua hak dilindungi.</p>
+    </footer>
+    <!-- jQuery Event (NAV BAR) -->
+        <script>
+            $(".navbar-nav .nav-link").hover(
+                function () {
+                $(this).css({
+                    "border-bottom": "2px solid #ffd27f",
+                    "padding-bottom": "4px"
+                });
+                },
+                function () {
+                $(this).css({
+                    "border-bottom": "none",
+                    "padding-bottom": "0"
+                });
+                }
+            );
+        </script>
 
-          document.getElementById("kategori").textContent = "Kategori usia anda adalah " + kategori;
-        }
-      </script>
-    </section>
-
-    <section class="box">
-      <h3>Kunjungi Kami</h3>
-      <p>
-        Ikuti kisah dan aktivitas kami di media sosial:<br>
-        <a href="https://instagram.com/batiknusantara" target="_blank">
-          📷 Instagram Batik Nusantara
-        </a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Batik Nusantara. Semua hak dilindungi.</p>
-  </footer>
-  
-</body>
+    </body>
 </html>

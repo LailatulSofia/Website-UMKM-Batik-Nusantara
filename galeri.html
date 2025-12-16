@@ -1,104 +1,213 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeri - Batik Nusantara</title>
-  <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galeri - Batik Nusantara</title>
+        <link rel="stylesheet" href="style.css" />
 
-  <!-- CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- JS Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+        <!-- CSS Bootstrap -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        />
+        <!-- JS Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
 
-<body>
-  <header>
-    <h1>Batik Nusantara</h1>
+    <body>
+        <header>
+        <h1>Batik Nusantara</h1>
 
-    <!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #532a10;">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center text-white" href="index.html"></a>
-        <img src="images/logo.jpg" alt="Logo Batik Nusantara" class="logo-navbar me-2">
-        <span class="text-white">UMKM Batik Nusantara</span>
+        <!-- Navbar BOOTSTARP -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #532a10">
+            <div class="container">
+            <a
+                class="navbar-brand d-flex align-items-center text-white"
+                href="index.html"
+            ></a>
+            <img
+                src="images/logo.jpg"
+                alt="Logo Batik Nusantara"
+                class="logo-navbar me-2"
+            />
+            <span class="text-white">UMKM Batik Nusantara</span>
 
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
-        </button>
+            <button
+                class="navbar-toggler text-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+            >
+                <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto d-flex gap-3">
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="index.html">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="tentang.html">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="produk.html">Produk</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="galeri.html">Galeri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-semibold custom-nav" href="kontak.html">Kontak</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex gap-3">
+                <li class="nav-item">
+                    <a
+                    class="nav-link text-white fw-semibold custom-nav"
+                    href="index.html"
+                    >Beranda</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                    class="nav-link text-white fw-semibold custom-nav"
+                    href="tentang.html"
+                    >Tentang</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                    class="nav-link text-white fw-semibold custom-nav"
+                    href="produk.html"
+                    >Produk</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                    class="nav-link text-white fw-semibold custom-nav"
+                    href="galeri.html"
+                    >Galeri</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                    class="nav-link text-white fw-semibold custom-nav"
+                    href="kontak.html"
+                    >Kontak</a
+                    >
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        </header>
 
-  <main class="container my-5">
+        <main class="container my-5">
         <h2 class="text-center mb-2">Galeri Produk dan Kegiatan</h2>
-    <section class="galeri">
-      <div class="card gallery-item">
-        <img id="img1" class="gallery-img" src="images/sarimbit1.jpg" alt="Sarimbit Keluarga Efata" data-name="Sarimbit Keluarga Efata">
-        <p class="product-name"></p>
-      </div>
+        <section class="galeri">
+            <div class="card gallery-item">
+            <img
+                id="img1"
+                class="gallery-img"
+                src="images/sarimbit1.jpg"
+                alt="Sarimbit Keluarga Efata"
+                data-name="Sarimbit Keluarga Efata"
+            />
+            <p class="product-name"></p>
+            </div>
 
-      <div class="card gallery-item">
-        <img id="img2" class="gallery-img" src="images/sarimbit2.jpg" alt="Sarimbit Keluarga Dewayani Defon" data-name="Sarimbit Keluarga Dewayani Defon">
-        <p class="product-name"></p>
-      </div>
+            <div class="card gallery-item">
+            <img
+                id="img2"
+                class="gallery-img"
+                src="images/sarimbit2.jpg"
+                alt="Sarimbit Keluarga Dewayani Defon"
+                data-name="Sarimbit Keluarga Dewayani Defon"
+            />
+            <p class="product-name"></p>
+            </div>
 
-      <div class="card gallery-item">
-        <img id="img3" class="gallery-img" src="images/sarimbit3.jpg" alt="Sarimbit Keluarga Leon Liena" data-name="Sarimbit Keluarga Leon Liena">
-        <p class="product-name"></p>
-      </div>
+            <div class="card gallery-item">
+            <img
+                id="img3"
+                class="gallery-img"
+                src="images/sarimbit3.jpg"
+                alt="Sarimbit Keluarga Leon Liena"
+                data-name="Sarimbit Keluarga Leon Liena"
+            />
+            <p class="product-name"></p>
+            </div>
 
-      <div class="card gallery-item">
-        <img id="img4" class="gallery-img" src="images/couple2.jpg" alt="Batik Couple Fujitora Fujitama" data-name="Batik Couple Fujitora Fujitama">
-        <p class="product-name"></p>
-      </div>
+            <div class="card gallery-item">
+            <img
+                id="img4"
+                class="gallery-img"
+                src="images/couple2.jpg"
+                alt="Batik Couple Fujitora Fujitama"
+                data-name="Batik Couple Fujitora Fujitama"
+            />
+            <p class="product-name"></p>
+            </div>
 
-      <div class="card gallery-item">
-        <img id="img5" class="gallery-img" src="images/couple1.jpg" alt="Batik Couple Lucilo Lindsey" data-name="Batik Couple Lucilo Lindsey">
-        <p class="product-name"></p>
-      </div>
+            <div class="card gallery-item">
+            <img
+                id="img5"
+                class="gallery-img"
+                src="images/couple1.jpg"
+                alt="Batik Couple Lucilo Lindsey"
+                data-name="Batik Couple Lucilo Lindsey"
+            />
+            <p class="product-name"></p>
+            </div>
 
-      <div class="card gallery-item">
-        <img id="img6" class="gallery-img" src="images/couple3.jpg" alt="Batik Couple Fujitora Fujitama" data-name="Batik Couple Fujitora Fujitama">
-        <p class="product-name"></p>
-      </div>
+            <div class="card gallery-item">
+            <img
+                id="img6"
+                class="gallery-img"
+                src="images/couple3.jpg"
+                alt="Batik Couple Fujitora Fujitama"
+                data-name="Batik Couple Fujitora Fujitama"
+            />
+            <p class="product-name"></p>
+            </div>
 
-      <div class="card gallery-item">
-        <img id="img7" class="gallery-img" src="images/blouse1.jpg" alt="Efata Blouse Off-White" data-name="Efata Blouse Off-White">
-        <p class="product-name"></p>
-      </div>
+            <div class="card gallery-item">
+            <img
+                id="img7"
+                class="gallery-img"
+                src="images/blouse1.jpg"
+                alt="Efata Blouse Off-White"
+                data-name="Efata Blouse Off-White"
+            />
+            <p class="product-name"></p>
+            </div>
 
-      <div class="card gallery-item">
-        <img id="img8" class="gallery-img" src="images/blouse2.jpg" alt="Amanda Blouse Purple Green" data-name="Amanda Blouse Purple Green">
-        <p class="product-name"></p>
-      </div>
-    </section>
-  </main>
+            <div class="card gallery-item">
+            <img
+                id="img8"
+                class="gallery-img"
+                src="images/blouse2.jpg"
+                alt="Amanda Blouse Purple Green"
+                data-name="Amanda Blouse Purple Green"
+            />
+            <p class="product-name"></p>
+            </div>
+        </section>
+        </main>
 
-  <footer>
-    <p>&copy; 2025 Batik Nusantara. Hak cipta dilindungi.</p>
-  </footer>
+        <footer>
+        <p>&copy; 2025 Batik Nusantara. Hak cipta dilindungi.</p>
+        </footer>
 
-  <script src="scriptgaleri.js"></script>
-</body>
+        <!-- jQuery Event (KALO DI ARAHKAN KURSOR DIA ZOOM) -->
+        <script>
+        $(".gallery-img").hover(
+            function(){ $(this).addClass("img-hover"); },
+            function(){ $(this).removeClass("img-hover"); }
+        );
+        </script>
+        <!-- jQuery Event (NAV BAR) -->
+        <script>
+            $(".navbar-nav .nav-link").hover(
+                function () {
+                $(this).css({
+                    "border-bottom": "2px solid #ffd27f",
+                    "padding-bottom": "4px"
+                });
+                },
+                function () {
+                $(this).css({
+                    "border-bottom": "none",
+                    "padding-bottom": "0"
+                });
+                }
+            );
+        </script>
+        <script src="scriptgaleri.js"></script>
+    </body>
 </html>
