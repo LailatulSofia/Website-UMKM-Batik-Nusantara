@@ -1,0 +1,374 @@
+:root {
+  --sogan: #532a10;
+  --emas: #d4af37;
+  --hitam: #111111;
+  --putih: #fdfdfd;
+  --cream: #e1dfdc;
+}
+
+/* ==========================
+   Global
+========================== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--putih);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ==========================
+   Header
+========================== */
+header {
+  background-color: var(--sogan);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Navbar list (kalau ada nav ul biasa) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd27f;
+  border-bottom: 2px solid #ffd27f;
+}
+
+/* ==========================
+   Typography
+========================== */
+h2,
+h3 {
+  color: var(--sogan);
+  margin-left: 1%;
+  text-align: center;
+}
+
+p {
+  margin: 12px 0;
+  color: var(--sogan);
+}
+
+/* ==========================
+   Main Layout
+========================== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ==========================
+   Box (ikut style Kopi)
+========================== */
+.box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 850px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.box h2,
+.box h3 {
+  margin-left: 0;
+  margin-bottom: 10px;
+  color: var(--sogan);
+}
+
+.box p {
+  margin-left: 0;
+  line-height: 1.7;
+  color: var(--sogan);
+}
+
+/* List fitur/testimoni (kalau dipakai) */
+.box ul,
+#list-testimoni,
+#layanan-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.box ul li,
+#list-testimoni li,
+#layanan-list li {
+  background: #f9f3ef;
+  margin: 8px auto;
+  padding: 10px 14px;
+  border-radius: 6px;
+  max-width: 500px;
+}
+
+/* ==========================
+   Table Produk
+========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+
+tr:hover {
+  background-color: #f9f3ef;
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+  background-color: var(--sogan);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+/* ==========================
+   Form (ikut style Kopi)
+========================== */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+form button[type="submit"] {
+  background-color: var(--sogan);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #75401b;
+}
+
+button {
+  background-color: #c2b2a9;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Deskripsi form di tengah */
+.form-desc {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Box form */
+.form-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Grup field */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Tombol */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* ==========================
+   Error
+========================== */
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* ==========================
+   Images (global)
+========================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   Galeri (FIX 4 kolom per baris)
+========================== */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 gambar per baris */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.galeri .card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ukuran gambar khusus galeri */
+.gallery-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* class dari scriptgaleri.js (hover) */
+.img-hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* caption hasil klik (TIDAK BOLD) */
+.product-name {
+  margin-top: 10px;
+  font-weight: normal;   /* penting: tidak bold */
+  font-size: 0.9rem;
+  min-height: 18px;
+  text-align: center;
+  color: var(--sogan);
+}
+
+/* ==========================
+   Responsive Galeri
+========================== */
+@media (max-width: 992px) {
+  .galeri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .galeri {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================
+   Produk (Card Bootstrap)
+========================== */
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* ==========================
+   Logo Navbar (Bootstrap)
+========================== */
+.logo-navbar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block !important;
+  margin: 0 !important;
+  background: #ffffff;
+  padding: 2px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+.navbar-brand {
+  width: auto;
+}

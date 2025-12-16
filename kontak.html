@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubungi Kami - Batik Nusantara</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSS Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Batik Nusantara</h1>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #532a10;">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="index.html"></a>
+        <img src="images/logo.jpg" alt="Logo Batik Nusantara" class="logo-navbar me-2">
+        <span class="text-white">UMKM Batik Nusantara</span>
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="tentang.html">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+
+    <h2 class="text-center mb-2">Hubungi Kami</h2>
+    <p class="text-center mb-5">
+      Silakan isi formulir berikut untuk menghubungi tim Batik Nusantara
+    </p>
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="box">
+          <h3 class="text-center mb-3">Form Kontak</h3>
+
+          <form id="formKontak">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+
+            <label for="hp">Nomor HP</label>
+            <input type="text" id="hp" />
+
+            <label for="kategori">Kategori Pesan</label>
+            <select id="kategori">
+              <option value="">-- Pilih --</option>
+              <option value="umum">Umum</option>
+              <option value="produk">Produk</option>
+              <option value="kerja sama">Kerja Sama</option>
+            </select>
+
+            <label for="tgl">Tanggal</label>
+            <input type="date" id="tgl" />
+
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" rows="4"></textarea>
+
+            <div class="form-actions">
+              <button type="submit">Kirim</button>
+              <button type="button" id="clearButton">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="box">
+          <h3 class="text-center mb-3">Pendaftaran Webinar</h3>
+
+          <form id="formWebinar">
+            <label for="namaWebinar">Nama Lengkap</label>
+            <input type="text" id="namaWebinar" />
+            <span class="error" id="errorNamaWebinar"></span>
+
+            <label for="emailWebinar">Email</label>
+            <input type="email" id="emailWebinar" />
+            <span class="error" id="errorEmailWebinar"></span>
+
+            <label for="hpWebinar">No HP</label>
+            <input type="text" id="hpWebinar" />
+            <span class="error" id="errorHpWebinar"></span>
+
+            <label for="topikWebinar">Topik Webinar</label>
+            <select id="topikWebinar">
+              <option value="">-- Pilih Topik --</option>
+              <option value="branding">Branding UMKM Batik</option>
+              <option value="digital">Digital Marketing Batik</option>
+              <option value="foto">Foto Produk</option>
+              <option value="packing">Packing & Pengiriman</option>
+            </select>
+            <span class="error" id="errorTopikWebinar"></span>
+
+            <label>
+              <input type="checkbox" id="setujuWebinar">
+              Saya menyetujui syarat & ketentuan
+            </label>
+            <span class="error" id="errorSetujuWebinar"></span>
+
+            <div class="form-actions">
+              <button type="submit">Daftar Webinar</button>
+              <button type="button" id="clearWebinar">Clear</button>
+            </div>
+
+            <p id="successWebinar" class="text-success text-center mt-2"></p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Batik Nusantara. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="scriptkontak.js"></script>
+
+</body>
+</html>
