@@ -60,37 +60,39 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="box">
-                    <h3 class="text-center mb-3">Hubungi Kami</h3>
+                        <h3 class="text-center mb-3">Hubungi Kami</h3>
 
-                    <form id="formKontak">
-                        <label for="nama">Nama</label>
-                        <input type="text" id="nama" />
+                        <form id="formKontak">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" />
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" />
+                            <label for="email">Email</label>
+                            <input type="email" id="email" />
 
-                        <label for="hp">Nomor HP</label>
-                        <input type="text" id="hp" />
+                            <label for="hp">Nomor HP</label>
+                            <input type="text" id="hp" />
 
-                        <label for="kategori">Kategori Pesan</label>
-                        <select id="kategori">
-                        <option value="">-- Pilih --</option>
-                        <option value="umum">Umum</option>
-                        <option value="produk">Produk</option>
-                        <option value="kerja sama">Kerja Sama</option>
-                        </select>
+                            <label for="kategori">Kategori Pesan</label>
+                            <select id="kategori">
+                            <option value="">-- Pilih --</option>
+                            <option value="umum">Umum</option>
+                            <option value="produk">Produk</option>
+                            <option value="kerja sama">Kerja Sama</option>
+                            </select>
 
-                        <label for="tgl">Tanggal</label>
-                        <input type="date" id="tgl" />
+                            <label for="tgl">Tanggal</label>
+                            <input type="date" id="tgl" />
 
-                        <label for="pesan">Pesan</label>
-                        <textarea id="pesan" rows="4"></textarea>
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" rows="4"></textarea>
 
-                        <div class="form-actions">
-                        <button type="submit">Kirim</button>
-                        <button type="button" id="clearButton">Clear</button>
-                        </div>
-                    </form>
+                            <div class="form-actions">
+                            <button type="submit">Kirim</button>
+                            <button type="button" id="clearButton">Clear</button>
+                            </div>
+                        </form>
+                        <p id="errorMsg" class="text-danger fw-semibold text-center mb-2"></p>
+                        <p id="successMsg" class="text-success fw-semibold text-center mb-2"></p>
                     </div>
                 </div>
 

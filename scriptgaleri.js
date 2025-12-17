@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = target.closest(".gallery-item");
         if (!card) return;
 
-        // klik card yang sama -> toggle off
+        // klik card yang sama, toggle off
         if (card.classList.contains("active")) {
             clearCard(card);
             lastCard = null;
             return;
         }
 
-        // klik card baru -> hapus yang lama
+        // klik card baru, hapus yang lama
         clearCard(lastCard);
 
         // tampilkan yang baru
